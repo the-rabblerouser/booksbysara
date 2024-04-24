@@ -1,38 +1,19 @@
-import React from 'react';
-import Link from 'next/link';
-// import Logo from './Logo';
-// import Button from './Button';
+'use client';
+import { useState } from 'react';
+import Navbar from './navbar';
+// import Sidebar from './sidebar';
 
-const Navbar = () => {
+const Navigation = () => {
+	const [isOpen, setIsOpen] = useState(false);
+	const toggle = () => {
+		setIsOpen(!isOpen);
+	};
 	return (
 		<>
-			<div className='w-full h-20 bg-emerald-800 sticky top-0'>
-				<div className='container mx-auto px-4 h-full'>
-					<div className='flex justify-between items-center h-full'>
-						{/* <Logo /> */}
-						<ul className='hidden md:flex gap-x-6 text-white'>
-							<li>
-								<Link href='/about'>
-									<p>About Us</p>
-								</Link>
-							</li>
-							<li>
-								<Link href='/services'>
-									<p>Services</p>
-								</Link>
-							</li>
-							<li>
-								<Link href='/contacts'>
-									<p>Contacts</p>
-								</Link>
-							</li>
-						</ul>
-						{/* <Button /> */}
-					</div>
-				</div>
-			</div>
+			{/* <Sidebar isOpen={isOpen} toggle={toggle} /> */}
+			<Navbar toggle={toggle} />
 		</>
 	);
 };
 
-export default Navbar;
+export default Navigation;
