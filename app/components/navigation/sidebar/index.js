@@ -23,7 +23,7 @@ const Sidebar = ({ isOpen, toggle }) => {
 					</svg>
 				</button>
 
-				<ul className='sidebar-nav text-centerleading-relaxed text-xl'>
+				<ul className='sidebar-nav text-center leading-relaxed text-xl'>
 					<li className='mb-4'>
 						<Link href='/about' onClick={toggle}>
 							<p>About Us</p>
