@@ -1,3 +1,5 @@
+// pages/index.js
+
 import Image from 'next/image';
 import bookPic from '/public/E88A08F1-F333-4CD7-A000-357E001CE459_1_102_o.jpeg';
 import Resources from './components/resources';
@@ -7,8 +9,8 @@ import Contact from './components/contact';
 export default function Home() {
 	return (
 		<div id='home_scroll'>
-			<div className='w-full h-full mt-[30px] mb-[50px] mx-auto px-4 flex flex-col md:flex-row'>
-				<div className='w-full place-self-center'>
+			<div className='w-full mt-[30px] mb-[50px] mx-auto px-4 flex flex-col md:flex-row overflow-x-hidden'>
+				<div className='w-full md:w-1/2 place-self-center'>
 					<Image
 						src={bookPic}
 						alt='Picture of the author'
@@ -18,10 +20,10 @@ export default function Home() {
 						placeholder='blur' // Optional blur-up while loading
 					/>
 				</div>
-				<div className='w-full flex flex-col p-10 justify-center'>
+				<div className='w-full md:w-1/2 flex flex-col p-10 justify-center'>
 					<h1 className='md:text-4xl text-3xl uppercase'>Gena goes to the</h1>
 					<h1 className='md:text-4xl text-3xl mb-5 uppercase'>
-						Genetic Counceler
+						Genetic Counselor
 					</h1>
 					<h1 className='text-2xl mt-[20px] mb-10'>
 						I'm proud to announce my first children's book is now available!
