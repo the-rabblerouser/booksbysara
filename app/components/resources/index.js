@@ -15,7 +15,7 @@ const Resources = () => {
 					<h2 className='text-lg font-semibold mb-4'>
 						Find A Genetic Counselor (Canada)
 					</h2>
-					<p className='text-sm text-gray-700'>
+					<p className='text-sm text-gray-700 break-all'>
 						<a href='https://www.cagc-accg.ca/'>https://www.cagc-accg.ca/</a>
 					</p>
 				</div>
@@ -23,7 +23,7 @@ const Resources = () => {
 					<h2 className='text-lg font-semibold mb-4'>
 						Find A Genetic Counselor (USA)
 					</h2>
-					<p className='text-sm text-gray-700'>
+					<p className='text-sm text-gray-700 break-all'>
 						<a href='https://findageneticcounselor.nsgc.org/'>
 							https://findageneticcounselor.nsgc.org/
 						</a>
@@ -33,7 +33,7 @@ const Resources = () => {
 					<h2 className='text-lg font-semibold mb-4'>
 						Genetic Counseling and Testing
 					</h2>
-					<p className='text-sm text-gray-700'>
+					<p className='text-sm text-gray-700 break-all'>
 						<a href='https://www.cdc.gov/genomics/gtesting/genetic_counseling_testing.htm'>
 							https://www.cdc.gov/genomics/gtesting/genetic_counseling_testing.htm
 						</a>
@@ -43,14 +43,18 @@ const Resources = () => {
 					<h2 className='text-lg font-semibold mb-4'>
 						The Adoptee’s Guide to DNA Testing by Tamar Weinberg
 					</h2>
-					<p className='text-sm text-gray-700'>ISBN: 978-1440353376</p>
+					<p className='text-sm text-gray-700 break-all'>
+						ISBN: 978-1440353376
+					</p>
 				</div>
 				<div className='bg-white rounded-lg shadow-md p-6'>
 					<h2 className='text-lg font-semibold mb-4'>
 						The DNA Guide for Adoptees by Brianne Kirkpatrick and Shannon
 						Combes-Bennett
 					</h2>
-					<p className='text-sm text-gray-700'>ISBN: 978-1733734301</p>
+					<p className='text-sm text-gray-700 break-all'>
+						ISBN: 978-1733734301
+					</p>
 				</div>
 			</div>
 			<div className='text-xl mt-8 mb-8 flex flex-col md:flex-row'>
@@ -61,7 +65,7 @@ const Resources = () => {
 					<h2 className='text-lg font-semibold mb-4'>
 						Text Only? Try the Crisis Text Line.
 					</h2>
-					<p className='text-sm text-gray-700'>
+					<p className='text-sm text-gray-700 break-all'>
 						<a href='https://www.crisistextline.org/'>
 							https://www.crisistextline.org/
 						</a>
@@ -71,7 +75,7 @@ const Resources = () => {
 					<h2 className='text-lg font-semibold mb-4'>
 						Need to talk to someone now? Dial 988.
 					</h2>
-					<p className='text-sm text-gray-700'>
+					<p className='text-sm text-gray-700 break-all'>
 						<a href='https://988lifeline.org/'>https://988lifeline.org/</a>
 					</p>
 				</div>
