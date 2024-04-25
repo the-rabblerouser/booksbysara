@@ -18,9 +18,9 @@ export default function Home() {
 						placeholder='blur' // Optional blur-up while loading
 					/>
 				</div>
-				<div className='w-full flex flex-col p-10 place-items-center justify-center'>
+				<div className='w-full flex flex-col p-10 justify-center'>
 					<h1 className='md:text-4xl text-3xl uppercase'>Gena goes to the</h1>
-					<h1 className='md:text-4xl text-3xl mb-10 uppercase'>
+					<h1 className='md:text-4xl text-3xl mb-5 uppercase'>
 						Genetic Counceler
 					</h1>
 					<h1 className='text-2xl mt-[20px] mb-10'>
