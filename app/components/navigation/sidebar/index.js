@@ -4,7 +4,7 @@ const Sidebar = ({ isOpen, toggle }) => {
 	return (
 		<>
 			<div
-				className='sidebar-container fixed w-full h-fit overflow-hidden justify-center bg-white grid pt-[80px] left-0 z-10'
+				className='sidebar-container fixed w-full h-full overflow-hidden justify-center bg-white grid pt-[80px] left-0 z-10'
 				style={{
 					opacity: `${isOpen ? '1' : '0'}`,
 					top: ` ${isOpen ? '0' : '-100%'}`,
@@ -22,24 +22,25 @@ const Sidebar = ({ isOpen, toggle }) => {
 						/>
 					</svg>
 				</button>
-
-				<ul className='sidebar-nav text-center leading-relaxed text-xl'>
-					<li className='mb-4'>
-						<Link href='/resources' onClick={toggle}>
-							<p>Resources</p>
-						</Link>
-					</li>
-					<li className='mb-4'>
-						<Link href='/meettheauthor' onClick={toggle}>
-							<p>Meet the Author</p>
-						</Link>
-					</li>
-					<li className='mb-4'>
-						<Link href='/contact' onClick={toggle}>
-							<p>Contact</p>
-						</Link>
-					</li>
-				</ul>
+				<div className='flex flex-col place-items-center'>
+					<ul className='sidebar-nav text-center h-full items-center leading-relaxed text-xl'>
+						<li className='mb-10'>
+							<Link href='/resources' onClick={toggle}>
+								<p>Resources</p>
+							</Link>
+						</li>
+						<li className='mb-10'>
+							<Link href='/meettheauthor' onClick={toggle}>
+								<p>Meet the Author</p>
+							</Link>
+						</li>
+						<li className='mb-10'>
+							<Link href='/contact' onClick={toggle}>
+								<p>Contact</p>
+							</Link>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</>
 	);
