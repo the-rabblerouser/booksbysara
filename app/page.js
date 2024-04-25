@@ -5,8 +5,8 @@ export default function Home() {
 	return (
 		<>
 			<div className='container mx-auto px-4'>
-				<div className='bg-violet-500 mt-[50px] mb-[50px] flex flex-col md:flex-row'>
-					<div className='w-full md:w-2/4 place-self-center'>
+				<div className=' mt-[50px] mb-[50px] flex flex-col md:flex-row'>
+					<div className='w-full place-self-center'>
 						<Image
 							src={bookPic}
 							alt='Picture of the author'
@@ -16,9 +16,10 @@ export default function Home() {
 							placeholder='blur' // Optional blur-up while loading
 						/>
 					</div>
-					<div className='text-white w-full flex flex-col p-4 place-items-center'>
-						<h1 className='text-4xl mb-10'>
-							Gena goes to the Genetic Counceler
+					<div className='w-full flex flex-col p-10 place-items-center justify-center'>
+						<h1 className='md:text-4xl text-3xl uppercase'>Gena goes to the</h1>
+						<h1 className='md:text-4xl text-3xl mb-10 uppercase'>
+							Genetic Counceler
 						</h1>
 						<h1 className='text-2xl mt-[20px] mb-10'>
 							I'm proud to announce my first children's book is now available!

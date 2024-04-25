@@ -8,7 +8,9 @@ const Navbar = ({ toggle }) => {
 				<div className='container mx-auto px-4 h-full'>
 					<div className='flex justify-between items-center h-full'>
 						<Link href='/'>
-							<h1 className='text-2xl'>Books By Sara</h1>
+							<h1 className='text-2xl'>
+								Books By <span className='text-violet-500'>Sara</span>
+							</h1>
 						</Link>
 
 						<button
