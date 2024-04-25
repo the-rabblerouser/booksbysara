@@ -14,7 +14,7 @@ const Navbar = () => {
 							smooth={true}
 							duration={500}
 							className='cursor-pointer'>
-							<h1 className='text-2xl mb-4 md:mb-0'>
+							<h1 className='text-2xl mt-4 md:mt-0 mb-4 md:mb-0'>
 								Books By <span className='text-violet-500'>Sara</span>
 							</h1>
 						</Link>

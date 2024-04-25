@@ -5,14 +5,14 @@ const Footer = () => {
 	const currentYear = new Date().getFullYear();
 
 	return (
-		<footer class='py-4 mt-[40px]'>
-			<div class='container mx-auto px-4'>
-				<div class='flex justify-between items-center'>
+		<footer className='py-4 mt-[40px]'>
+			<div className='container mx-auto px-4'>
+				<div className='flex justify-between items-center'>
 					<div>
 						<p>&copy; {currentYear} Sara Smith</p>
 					</div>
 					{/* <div>
-            <ul class='flex space-x-4'>
+            <ul className='flex space-x-4'>
                 <li>
                     <Link href='/resources'>
                         <p>Resources</p>
