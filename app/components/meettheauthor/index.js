@@ -4,7 +4,7 @@ import authorPic from '/public/IMG_3225.jpeg';
 
 const MeetTheAuthor = () => {
 	return (
-		<div id='meet_the_author_scroll'>
+		<div className='meet_the_author_scroll'>
 			<div className='mx-auto mt-[50px] px-4 h-fit'>
 				<div className='flex justify-center items-center'>
 					<div className='w-full rounded-lg overflow-hidden shadow-lg flex flex-col md:flex-row bg-violet-100'>

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Resources = () => {
 	return (
-		<div id='resources_scroll' className='mx-auto px-4'>
+		<div className='mx-auto px-4 resources_scroll'>
 			<div className='text-3xl mt-[50px] mb-[50px] flex flex-col md:flex-row'>
 				Resources
 			</div>

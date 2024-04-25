@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link as ScrollLink } from 'react-scroll';
 
 const Navbar = () => {
 	return (
@@ -6,19 +7,46 @@ const Navbar = () => {
 			<div className='w-full h-30 md:h-20 top-0 sticky bg-white'>
 				<div className='container mx-auto px-4 h-full'>
 					<div className='flex flex-col md:flex-row justify-between items-center h-full'>
-						<a href='#home_scroll'>
-							Books By <span className='text-violet-500'>Sara</span>
-						</a>
+						<ScrollLink
+							to='home_scroll'
+							spy={true}
+							smooth={true}
+							duration={500}
+							className='text-3xl mt-4 mb-4 md:mt-0 md:mb-0'>
+							Books By{' '}
+							<span className='text-violet-500 cursor-pointer'>Sara</span>
+						</ScrollLink>
 
 						<ul className='flex flex-row gap-x-6'>
 							<li>
-								<a href='#meet_the_author_scroll'>Meet the Author</a>
+								<ScrollLink
+									to='meet_the_author_scroll'
+									spy={true}
+									smooth={true}
+									duration={500}
+									className='cursor-pointer'>
+									Meet the Author
+								</ScrollLink>
 							</li>
 							<li>
-								<a href='#resources_scroll'>Resources</a>
+								<ScrollLink
+									to='resources_scroll'
+									spy={true}
+									smooth={true}
+									duration={500}
+									className='cursor-pointer'>
+									Resources
+								</ScrollLink>
 							</li>
 							<li>
-								<a href='#contact_scroll'>Contact</a>
+								<ScrollLink
+									to='contact_scroll'
+									spy={true}
+									smooth={true}
+									duration={500}
+									className='cursor-pointer'>
+									Contact
+								</ScrollLink>
 							</li>
 						</ul>
 					</div>
