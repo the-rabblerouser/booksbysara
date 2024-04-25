@@ -5,19 +5,9 @@ import authorPic from '/public/IMG_3225.jpeg';
 const meettheauthor = () => {
 	return (
 		<div className='mx-auto mt-[50px] px-4 h-fit'>
-			<div class='flex justify-center items-center '>
-				<div class='w-full bg-white rounded-lg overflow-hidden shadow-lg flex flex-col md:flex-row'>
-					<div class='w-full jusitfy-center md:w-2/5'>
-						<Image
-							src={authorPic}
-							alt='Picture of the author'
-							width={500}
-							height={500}
-							blurDataURL='data:...'
-							placeholder='blur' // Optional blur-up while loading
-						/>
-					</div>
-					<div class='w-full md:w-3/5 flex flex-col justify-center mb-6'>
+			<div class='flex justify-center items-center'>
+				<div class='w-full rounded-lg overflow-hidden shadow-lg flex flex-col md:flex-row bg-violet-100'>
+					<div class='w-full md:w-3/5 flex flex-col justify-center mb-6 text-grey-300'>
 						<div className='text-3xl text-center mt-[50px] mb-[30px]'>
 							Meet the Author
 						</div>
@@ -35,8 +25,18 @@ const meettheauthor = () => {
 						</p>
 						<p class='text-center px-6'>
 							During her free time she enjoys traveling, practicing Brazilian
-							jiu jitsu, and playing with her cats.
+							Jiu Jitsu, and playing with her cats.
 						</p>
+					</div>
+					<div class='w-full jusitfy-center md:w-2/5'>
+						<Image
+							src={authorPic}
+							alt='Picture of the author'
+							width={500}
+							height={500}
+							blurDataURL='data:...'
+							placeholder='blur' // Optional blur-up while loading
+						/>
 					</div>
 				</div>
 			</div>
