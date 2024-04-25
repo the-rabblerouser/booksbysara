@@ -6,8 +6,8 @@ import Contact from './components/contact';
 
 export default function Home() {
 	return (
-		<div id='home_scroll' className='container'>
-			<div className=' mt-[30px] mb-[50px] mx-auto px-4 flex flex-col md:flex-row'>
+		<div id='home_scroll'>
+			<div className='w-full h-full mt-[30px] mb-[50px] mx-auto px-4 flex flex-col md:flex-row'>
 				<div className='w-full place-self-center'>
 					<Image
 						src={bookPic}
