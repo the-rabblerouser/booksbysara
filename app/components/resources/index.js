@@ -2,7 +2,7 @@ import React from 'react';
 
 const Resources = () => {
 	return (
-		<>
+		<div className='resources_scroll mx-auto px-4'>
 			<div className='text-3xl mt-[50px] mb-[50px] flex flex-col md:flex-row'>
 				Resources
 			</div>
@@ -76,7 +76,7 @@ const Resources = () => {
 					</p>
 				</div>
 			</div>
-		</>
+		</div>
 	);
 };
 

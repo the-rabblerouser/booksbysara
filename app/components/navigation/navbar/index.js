@@ -1,13 +1,14 @@
 import React from 'react';
-import Link from 'next/link';
+// import Link from 'next/link';
+import { Link } from 'react-scroll';
 
 const Navbar = ({ toggle }) => {
 	return (
 		<>
-			<div className='w-full h-20 top-0'>
+			<div className='w-full h-20 top-0 sticky bg-white'>
 				<div className='container mx-auto px-4 h-full'>
 					<div className='flex justify-between items-center h-full'>
-						<Link href='/'>
+						<Link to='home_scroll' spy={true} smooth={true} duration={500}>
 							<h1 className='text-2xl'>
 								Books By <span className='text-violet-500'>Sara</span>
 							</h1>
@@ -30,17 +31,29 @@ const Navbar = ({ toggle }) => {
 						</button>
 						<ul className='hidden md:flex gap-x-6'>
 							<li>
-								<Link href='/resources'>
+								<Link
+									to='resources_scroll'
+									spy={true}
+									smooth={true}
+									duration={500}>
 									<p>Resources</p>
 								</Link>
 							</li>
 							<li>
-								<Link href='/meettheauthor'>
+								<Link
+									to='meet_the_author_scroll'
+									spy={true}
+									smooth={true}
+									duration={500}>
 									<p>Meet the Author</p>
 								</Link>
 							</li>
 							<li>
-								<Link href='/contact'>
+								<Link
+									to='contact_scroll'
+									spy={true}
+									smooth={true}
+									duration={500}>
 									<p>Contact</p>
 								</Link>
 							</li>
