@@ -1,35 +1,8 @@
-'use client';
-import { useState } from 'react';
-import axios from 'axios';
+import React from 'react';
 
 const Contact = () => {
-	const [formData, setFormData] = useState({
-		name: '',
-		email: '',
-		message: '',
-	});
-
-	const handleChange = (e) => {
-		setFormData({ ...formData, [e.target.name]: e.target.value });
-	};
-
-	const handleSubmit = async (e) => {
-		e.preventDefault();
-
-		try {
-			await axios.post('../../pages/api/sendEmail.js', formData);
-			alert('Message sent successfully!');
-			setFormData({ name: '', email: '', message: '' });
-		} catch (error) {
-			console.error('Error sending message:', error);
-			alert(
-				'An error occurred while sending the message. Please try again later.'
-			);
-		}
-	};
-
 	return (
-		<div className='contact_scroll' onSubmit={handleSubmit}>
+		<div className='contact_scroll'>
 			<div className='mx-auto mt-[50px] px-4 h-fit'>
 				<div className='flex justify-center items-center w-full mx-auto px-4 rounded-lg overflow-hidden shadow-md p-6 mt-[50px] bg-violet-100'>
 					<form className='md:w-6/12 w-11/12'>
@@ -44,8 +17,6 @@ const Contact = () => {
 								id='name'
 								name='name'
 								placeholder='Enter your name'
-								value={formData.name}
-								onChange={handleChange}
 								className='w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-blue-500'
 							/>
 						</div>
@@ -60,8 +31,6 @@ const Contact = () => {
 								id='email'
 								name='email'
 								placeholder='Enter your email'
-								value={formData.email}
-								onChange={handleChange}
 								className='w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-blue-500'
 							/>
 						</div>
@@ -75,8 +44,6 @@ const Contact = () => {
 								id='message'
 								name='message'
 								placeholder='Enter your message'
-								value={formData.message}
-								onChange={handleChange}
 								rows='4'
 								className='w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-blue-500'></textarea>
 						</div>
