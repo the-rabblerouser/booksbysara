@@ -1,5 +1,8 @@
 import Image from 'next/image';
 import bookPic from '/public/E88A08F1-F333-4CD7-A000-357E001CE459_1_102_o.jpeg';
+import Resources from './components/resources';
+import MeetTheAuthor from './components/meettheauthor';
+import Contact from './components/contact';
 
 export default function Home() {
 	return (
@@ -41,6 +44,9 @@ export default function Home() {
 						</p>
 					</div>
 				</div>
+				<MeetTheAuthor />
+				<Resources />
+				<Contact />
 			</div>
 		</>
 	);
