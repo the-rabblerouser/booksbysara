@@ -16,7 +16,7 @@ export default function Home() {
 							width={500}
 							height={500}
 							blurDataURL='data:...'
-							placeholder='blur' // Optional blur-up while loading
+							placeholder='blur'
 						/>
 					</div>
 					<div className='w-full flex flex-col p-10 place-items-center justify-center'>
