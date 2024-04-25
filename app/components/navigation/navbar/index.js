@@ -12,9 +12,8 @@ const Navbar = () => {
 							spy={true}
 							smooth={true}
 							duration={500}
-							className='text-3xl mt-4 mb-4 md:mt-0 md:mb-0'>
-							Books By{' '}
-							<span className='text-violet-500 cursor-pointer'>Sara</span>
+							className='text-3xl mt-4 mb-4 md:mt-0 md:mb-0 cursor-pointer'>
+							Books By <span className='text-violet-500 '>Sara</span>
 						</ScrollLink>
 
 						<ul className='flex flex-row gap-x-6'>
