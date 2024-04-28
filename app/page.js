@@ -21,7 +21,7 @@ export default function Home() {
 					/>
 				</div>
 				<div className='w-full md:w-1/2 flex flex-col p-10 justify-center text-center md:text-left'>
-					<h1 className='md:text-4xl text-3xl uppercase'>Gena goes to the</h1>
+					<h1 className='md:text-4xl text-3xl uppercase'>Gina goes to the</h1>
 					<h1 className='md:text-4xl text-3xl mb-5 uppercase'>
 						Genetic Counselor
 					</h1>
