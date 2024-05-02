@@ -59,7 +59,6 @@ const Contact = () => {
 							<button
 								type='submit'
 								formMethod='POST'
-								onClick={() => window.location.reload()}
 								className='border border-gray-300 hover:bg-white font-semibold py-2 px-4 rounded inline-flex items-center'>
 								Submit
 							</button>

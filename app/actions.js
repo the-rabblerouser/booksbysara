@@ -2,24 +2,29 @@
 
 import { redirect } from 'next/navigation';
 import { revalidatePath } from 'next/cache';
-import { mailOptions, transporter } from '../../config/nodemailer';
+import { mailOptions, transporter } from './config/nodemailer';
 
-export async function handleMyFormSubmit(data) {
+export async function handleMyFormSubmit(req, res) {
+	// console.log({
+	// 	name: req.name,
+	// 	email: req.email,
+	// 	message: req.email,
+	// });
+	const message_body = {
+		name: req.name,
+		email: req.email,
+		message: req.message,
+	};
 	try {
-		console.log({
-			name: data.name,
-			email: data.email,
-			message: data.email,
-		});
 		await transporter.sendMail({
 			...mailOptions,
-			...generateEmailContent(data),
-			subject: data.subject,
+			...message_body,
+			subject: 'Message from Fan!',
 		});
 	} catch (error) {
-		return { message: 'Bad request' };
+		console.log({ message: 'Bad request' });
 	}
 
 	revalidatePath('/');
-	redirect(`/}`);
+	redirect('/');
 }
