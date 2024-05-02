@@ -10,16 +10,17 @@ export async function handleMyFormSubmit(req, res) {
 	// 	email: req.email,
 	// 	message: req.email,
 	// });
-	const message_body = {
+	const body = {
 		name: req.name,
 		email: req.email,
 		message: req.message,
 	};
+
 	try {
 		await transporter.sendMail({
 			...mailOptions,
-			...message_body,
-			subject: 'Message from Fan!',
+			text: `This is a message from ${body.name}, ${body.email}. ${body.message}`,
+			subject: `Website message from ${body.name}`,
 		});
 	} catch (error) {
 		console.log({ message: 'Bad request' });
