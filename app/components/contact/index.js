@@ -5,7 +5,9 @@ import { useForm } from 'react-hook-form';
 import { handleMyFormSubmit } from '@/app/actions';
 
 const Contact = () => {
-	const onSubmit = (data) => handleMyFormSubmit(data);
+	const onSubmit = (data) => {
+		handleMyFormSubmit(data);
+	};
 	const {
 		register,
 		handleSubmit,
@@ -56,6 +58,7 @@ const Contact = () => {
 						<div className='flex justify-center'>
 							<button
 								type='submit'
+								formMethod='POST'
 								onClick={() => window.location.reload()}
 								className='border border-gray-300 hover:bg-white font-semibold py-2 px-4 rounded inline-flex items-center'>
 								Submit
