@@ -5,11 +5,6 @@ import { revalidatePath } from 'next/cache';
 import { mailOptions, transporter } from './config/nodemailer';
 
 export async function handleMyFormSubmit(req, res) {
-	// console.log({
-	// 	name: req.name,
-	// 	email: req.email,
-	// 	message: req.email,
-	// });
 	const body = {
 		name: req.name,
 		email: req.email,
@@ -19,7 +14,7 @@ export async function handleMyFormSubmit(req, res) {
 	try {
 		await transporter.sendMail({
 			...mailOptions,
-			text: `This is a message from ${body.name}, ${body.email}. ${body.message}`,
+			html: `<div><h2>Name</h2><p>${body.name}</p><h2>Email</h2><p>${body.email}</p><h2>Message</h2><p>${body.message}</p></div>`,
 			subject: `Website message from ${body.name}`,
 		});
 	} catch (error) {
