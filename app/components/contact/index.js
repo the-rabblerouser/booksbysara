@@ -3,10 +3,14 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { handleMyFormSubmit } from '@/app/actions';
+import { useRouter } from 'next/navigation';
 
 const Contact = () => {
-	const onSubmit = (data) => {
+	const router = useRouter();
+
+	const onSubmit = (data, e) => {
 		handleMyFormSubmit(data);
+		e.target.reset();
 	};
 	const {
 		register,
@@ -59,6 +63,7 @@ const Contact = () => {
 							<button
 								type='submit'
 								formMethod='POST'
+								onClick={() => router.push('/')}
 								className='border border-gray-300 hover:bg-white font-semibold py-2 px-4 rounded inline-flex items-center'>
 								Submit
 							</button>
