@@ -40,10 +40,9 @@ const Resources = () => {
 
 	return (
 		<div className='mx-auto px-4 resources_scroll'>
-			<div className='text-3xl mt-[50px] mb-[50px] flex flex-col md:flex-row'>
+			{/* <div className='text-3xl mt-[50px] mb-[50px] flex flex-col md:flex-row'>
 				Resources
-			</div>
-
+			</div> */}
 			<div className='text-xl mt-[50px] mb-[50px] flex flex-col md:flex-row'>
 				Genetic Counseling Resources
 			</div>
@@ -52,6 +51,7 @@ const Resources = () => {
 					<motion.div
 						key={index}
 						whileHover={{ scale: 1.1 }}
+						whileTap={{ scale: 0.8 }}
 						onHoverStart={(e) => {}}
 						onHoverEnd={(e) => {}}
 						className='bg-white rounded-lg shadow-md p-6'>
@@ -63,7 +63,7 @@ const Resources = () => {
 					</motion.div>
 				))}
 			</div>
-			<div className='text-xl mt-8 mb-8 flex flex-col md:flex-row'>
+			<div className='text-xl mt-16 mb-8 flex flex-col md:flex-row'>
 				Mental Health Resources
 			</div>
 			<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-6'>
