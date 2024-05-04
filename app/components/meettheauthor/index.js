@@ -36,6 +36,7 @@ const MeetTheAuthor = () => {
 								width={500}
 								height={500}
 								blurDataURL='data:...'
+								className='w-full h-full'
 								placeholder='blur' // Optional blur-up while loading
 							/>
 						</div>
