@@ -61,12 +61,12 @@ export default function Home() {
 								width={500}
 								height={500}
 								blurDataURL='data:...'
-								className=''
+								className='border border-gray-300'
 								placeholder='blur' // Optional blur-up while loading
 							/>
 						</div>
 						<div
-							className={`${playfairDisplay.className} w-full flex flex-col justify-center mb-6 mt-4 text-grey-300`}>
+							className={`${playfairDisplay.className} w-full h-[516px] lg:h-[366px] flex flex-col justify-center mb-6 mt-4 text-grey-300`}>
 							<h1 className='text-5xl md:text-3xl text-center'>
 								Keep an eye out,
 							</h1>
