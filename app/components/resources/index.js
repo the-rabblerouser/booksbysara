@@ -42,7 +42,7 @@ const Resources = () => {
 			link_name: 'crisistextline.org',
 		},
 		{
-			title: 'Need to talk to someone now? Dial 988.',
+			title: 'Need to talk to someone now? Dial 988',
 			link: 'https://988lifeline.org/',
 			link_name: '988lifeline.org',
 		},
