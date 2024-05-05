@@ -83,7 +83,7 @@ const Contact = () => {
 									type='submit'
 									formMethod='POST'
 									onClick={() => router.push('/')}
-									className={`${montserrat.className} border border-gray-300 bg-sara_gray font-semibold py-2 px-4 inline-flex`}>
+									className={`${montserrat.className} border border-gray-300 bg-white font-semibold py-2 px-4 inline-flex`}>
 									Submit
 								</motion.button>
 							</div>
