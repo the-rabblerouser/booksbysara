@@ -36,6 +36,12 @@ const Contact = () => {
 							dignissimos minima facilis laudantium nam ipsa alias numquam
 							voluptatibus debitis veritatis?
 						</p>
+						<p
+							className={`${montserrat.className} text-sm md:text-md text-center mt-5 mb-7 lg:mb-0 md:mx-40 lg:mx-20`}>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+							dignissimos minima facilis laudantium nam ipsa alias numquam
+							voluptatibus debitis veritatis?
+						</p>
 					</div>
 					<div className={`${montserrat.className} w-full`}>
 						<form onSubmit={handleSubmit(onSubmit)}>
