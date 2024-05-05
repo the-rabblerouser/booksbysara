@@ -9,14 +9,14 @@ import { motion } from 'framer-motion';
 const Resources = () => {
 	const gc_resources = [
 		{
-			title: 'Find A Genetic Counselor (Canada)',
-			link: 'https://www.cagc-accg.ca/',
-			link_name: 'cagc-accg.ca',
-		},
-		{
 			title: 'Find A Genetic Counselor (USA)',
 			link: 'https://findageneticcounselor.nsgc.org/',
 			link_name: 'findageneticcounselor.nsgc.org',
+		},
+		{
+			title: 'Find A Genetic Counselor (Canada)',
+			link: 'https://www.cagc-accg.ca/',
+			link_name: 'cagc-accg.ca',
 		},
 		{
 			title: 'Genetic Counseling and Testing',
