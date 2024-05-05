@@ -18,7 +18,7 @@ const Navbar = () => {
 							Books By <span className='text-violet-500 '>Sara</span>
 						</ScrollLink>
 
-						<ul className='flex flex-row gap-x-6'>
+						<ul className='flex flex-row gap-x-6 mb-4 md:mb-0'>
 							<li>
 								<ScrollLink
 									to='meet_the_author_scroll'

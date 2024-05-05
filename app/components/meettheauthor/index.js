@@ -13,7 +13,7 @@ const MeetTheAuthor = () => {
 					<div className='w-full overflow-hidden shadow-lg flex flex-col md:flex-row bg-violet-100'>
 						<div className='w-full md:w-3/5 flex flex-col justify-center mb-6 text-grey-300'>
 							<div
-								className={`${playfairDisplay.className} text-[40px] lg:text-[60px] xlg:text-[80px] text-center mt-[10px] lg:mt-[20px] mb-[20px] md:mb-[10px] lg:mb-[20px]`}>
+								className={`${playfairDisplay.className} text-[40px] text-center mt-[10px] lg:mt-[20px] mb-[20px] md:mb-[10px] lg:mb-[20px]`}>
 								Meet the Author
 							</div>
 							<p
