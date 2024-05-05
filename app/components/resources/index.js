@@ -76,7 +76,7 @@ const Resources = () => {
 								whileTap={{ scale: 0.8 }}
 								onHoverStart={(e) => {}}
 								onHoverEnd={(e) => {}}
-								className='border border-gray-300 hover:bg-white font-semibold py-2 px-4 inline-flex'>
+								className={`${montserrat.className} border border-gray-300 bg-sara_gray font-semibold py-2 px-4 inline-flex`}>
 								Learn More
 							</motion.button>
 						</Link>
@@ -106,7 +106,7 @@ const Resources = () => {
 								whileTap={{ scale: 0.8 }}
 								onHoverStart={(e) => {}}
 								onHoverEnd={(e) => {}}
-								className='border border-gray-300 hover:bg-white font-semibold py-2 px-4 inline-flex'>
+								className={`${montserrat.className} border border-gray-300 bg-sara_gray font-semibold py-2 px-4 inline-flex`}>
 								Learn More
 							</motion.button>
 						</Link>

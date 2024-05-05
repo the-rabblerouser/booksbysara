@@ -6,6 +6,7 @@ import { playfairDisplay, montserrat } from '../../fonts';
 import { useForm } from 'react-hook-form';
 import { handleMyFormSubmit } from '@/app/actions';
 import { useRouter } from 'next/navigation';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
 	const router = useRouter();
@@ -23,7 +24,7 @@ const Contact = () => {
 	return (
 		<div className='contact_scroll'>
 			<div className='mx-auto mt-[50px] px-4 h-fit'>
-				<div className='flex flex-col lg:flex-row justify-evenly w-full mx-auto overflow-hidden shadow-md p-6 mt-[50px] bg-violet-100'>
+				<div className='flex flex-col lg:flex-row justify-evenly w-full mx-auto overflow-hidden shadow-md p-6 mt-[50px] bg-sara_gold'>
 					<div className=''>
 						<h1
 							className={`${playfairDisplay.className} text-2xl md:text-4xl uppercase text-center mb-5 lg:mb-10`}>
@@ -44,7 +45,7 @@ const Contact = () => {
 									id='name'
 									name='name'
 									placeholder='Name'
-									className='w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-blue-500'
+									className='w-full border border-gray-300 px-4 py-2 focus:outline-none focus:border-blue-500'
 									{...register('name', { required: true })}
 								/>
 								{errors.name && <span>This field is required</span>}
@@ -55,7 +56,7 @@ const Contact = () => {
 									id='email'
 									name='email'
 									placeholder='Email'
-									className='w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-blue-500'
+									className='w-full border border-gray-300 px-4 py-2 focus:outline-none focus:border-blue-500'
 									{...register('email', {
 										required: true,
 										pattern: /^\S+@\S+$/i,
@@ -69,18 +70,22 @@ const Contact = () => {
 									name='message'
 									placeholder='Message'
 									rows='4'
-									className='w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-blue-500'
+									className='w-full border border-gray-300 px-4 py-2 focus:outline-none focus:border-blue-500'
 									{...register('message', { required: true })}></textarea>
 								{errors.message && <span>This field is required</span>}
 							</div>
 							<div className='flex justify-center'>
-								<button
+								<motion.button
+									whileHover={{ scale: 1.2 }}
+									whileTap={{ scale: 0.8 }}
+									onHoverStart={(e) => {}}
+									onHoverEnd={(e) => {}}
 									type='submit'
 									formMethod='POST'
 									onClick={() => router.push('/')}
-									className='border border-gray-300 hover:bg-white font-semibold py-2 px-4 rounded inline-flex items-center'>
+									className={`${montserrat.className} border border-gray-300 bg-sara_gray font-semibold py-2 px-4 inline-flex`}>
 									Submit
-								</button>
+								</motion.button>
 							</div>
 						</form>
 					</div>

@@ -46,11 +46,15 @@ export default function Home() {
 								genetic testing can be a daunting task, as is the case for
 								seven-year-old Gina.
 							</p>
-							<button
+							<motion.button
+								whileHover={{ scale: 1.2 }}
+								whileTap={{ scale: 0.8 }}
+								onHoverStart={(e) => {}}
+								onHoverEnd={(e) => {}}
 								onClick={() => router.push('/')}
-								className='border border-gray-300 hover:bg-white font-semibold py-2 px-4 rounded inline-flex self-center'>
+								className={`${montserrat.className} border border-gray-300 bg-sara_gray font-semibold py-2 px-4 inline-flex self-center`}>
 								Learn More
-							</button>
+							</motion.button>
 						</div>
 					</div>
 					<div className='w-full h-full md:w-2/6 overflow-hidden flex flex-col'>
