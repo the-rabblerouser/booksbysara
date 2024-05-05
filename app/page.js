@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { playfairDisplay, montserrat } from './fonts';
 import { motion } from 'framer-motion';
 
@@ -12,6 +13,9 @@ import MeetTheAuthor from './components/meettheauthor';
 import Contact from './components/contact';
 
 export default function Home() {
+	const amazon_link =
+		'https://www.amazon.com/Gina-goes-Genetic-Counselor-Smith-ebook/dp/B0BHXCGHY1/ref=sr_1_1?crid=3539G9CU5Z5LZ&dib=eyJ2IjoiMSJ9.bTAj6n_3Ek2saSZmSygptg.OgUQ0cpQu4fw94cAU2DLr2jlvH0DVgZTNrQHJJdXdds&dib_tag=se&keywords=gina+goes+to+the+genetic&qid=1714886233&sprefix=gina+goes+to+the+genetic+%2Caps%2C89&sr=8-1';
+
 	return (
 		<div id='home_scroll'>
 			<div className='mx-auto mt-[50px] px-4 h-fit'>
@@ -46,15 +50,18 @@ export default function Home() {
 								genetic testing can be a daunting task, as is the case for
 								seven-year-old Gina.
 							</p>
-							<motion.button
-								whileHover={{ scale: 1.2 }}
-								whileTap={{ scale: 0.8 }}
-								onHoverStart={(e) => {}}
-								onHoverEnd={(e) => {}}
-								onClick={() => router.push('/')}
-								className={`${montserrat.className} border border-gray-300 bg-sara_gray font-semibold py-2 px-4 inline-flex self-center`}>
-								Learn More
-							</motion.button>
+
+							<Link className='self-center' href={amazon_link}>
+								<motion.button
+									whileHover={{ scale: 1.2 }}
+									whileTap={{ scale: 0.8 }}
+									onHoverStart={(e) => {}}
+									onHoverEnd={(e) => {}}
+									onClick={() => router.push('/')}
+									className={`${montserrat.className} border border-gray-300 bg-sara_gray font-semibold py-2 px-4 inline-flex`}>
+									Purchase
+								</motion.button>
+							</Link>
 						</div>
 					</div>
 					<div className='w-full h-full md:w-2/6 overflow-hidden flex flex-col'>
@@ -68,18 +75,6 @@ export default function Home() {
 								className='border border-gray-300'
 								placeholder='blur' // Optional blur-up while loading
 							/>
-						</div>
-						<div
-							className={`${playfairDisplay.className} w-full h-[516px] lg:h-[366px] flex flex-col justify-center mb-6 mt-4 text-grey-300`}>
-							<h1 className='text-5xl md:text-3xl text-center'>
-								Keep an eye out,
-							</h1>
-							<h1 className='text-5xl  md:text-3xl text-center mb-[30px] mx-4 md:mx-0 lg:mx-[4rem]'>
-								I'm currently working on my next book!
-							</h1>
-
-							<p className='text-center mb-6 px-6'></p>
-							<p className='text-center px-6'></p>
 						</div>
 					</div>
 				</div>
