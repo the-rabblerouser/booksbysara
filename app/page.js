@@ -1,9 +1,11 @@
 'use client';
+
 import Image from 'next/image';
+import { playfairDisplay, montserrat } from './fonts';
 import { motion } from 'framer-motion';
 
 import bookPic from '/public/E88A08F1-F333-4CD7-A000-357E001CE459_1_102_o.jpeg';
-import commingSoonBook from '/public/istockphoto-1417048081-612x612.jpg';
+import commingSoonBook from '/public/comming_soon.png';
 
 import Resources from './components/resources';
 import MeetTheAuthor from './components/meettheauthor';
@@ -15,55 +17,61 @@ export default function Home() {
 			<div className='mx-auto mt-[50px] px-4 h-fit'>
 				<div className='flex flex-col md:flex-row justify-evenly items-start'>
 					<div className='w-full md:w-2/6 overflow-hidden flex flex-col'>
-						<div className='w-9/12 jusitfy-center self-center mt-4'>
+						<div className=' jusitfy-center self-center mt-4'>
 							<Image
 								src={bookPic}
 								alt='Picture of the author'
 								width={500}
 								height={500}
 								blurDataURL='data:...'
-								className='h-[25rem]'
+								className='h-full'
 								placeholder='blur' // Optional blur-up while loading
 							/>
 						</div>
 						<div className='w-full flex flex-col justify-center mb-6 mt-3 text-grey-300'>
-							<h1 className='text-4xl text-center'>Gina goes to the</h1>
-							<h1 className='text-4xl text-center mb-[30px]'>
-								Genetic Counselor
+							<h1
+								className={`${playfairDisplay.className} text-[80px] text-center uppercase`}>
+								Gina
+							</h1>
+							<h1
+								className={`${playfairDisplay.className} text-[20px] text-center mb-[30px] uppercase`}>
+								goes to the Genetic Counselor
 							</h1>
 
-							<p className='text-center mb-6 px-6'>
+							<p
+								className={`${montserrat.className} text-center mb-6 mx-3 md:mx-0 lg:mx-9`}>
 								Being adopted is awesome! But sometimes being adopted makes
 								things complicated, especially when it comes to understanding
 								genetics. For those who don’t know their genetic background,
 								genetic testing can be a daunting task, as is the case for
 								seven-year-old Gina.
 							</p>
-							<p className='text-center px-6'>
-								Gina goes to the Genetic Counselor follows a young girl and her
-								adoptive parents as they try to discover why Gina is plagued by
-								frequent illness. Along the way they find out that Gina’s DNA
-								might be the reason she keeps getting sick, but they won’t know
-								until they meet with a genetic counselor for testing.
-							</p>
+							<button
+								onClick={() => router.push('/')}
+								className='border border-gray-300 hover:bg-white font-semibold py-2 px-4 rounded inline-flex self-center'>
+								Learn More
+							</button>
 						</div>
 					</div>
 					<div className='w-full h-full md:w-2/6 overflow-hidden flex flex-col'>
-						<div className='w-9/12 jusitfy-center self-center mt-4'>
+						<div className='jusitfy-center self-center mt-4'>
 							<Image
 								src={commingSoonBook}
 								alt='Picture of the author'
 								width={500}
 								height={500}
 								blurDataURL='data:...'
-								className='h-[25rem]'
+								className=''
 								placeholder='blur' // Optional blur-up while loading
 							/>
 						</div>
-						<div className='w-full flex flex-col justify-center mb-6 mt-3 text-grey-300'>
-							<h1 className='text-4xl text-center'>Coming Soon,</h1>
-							<h1 className='text-4xl text-center mt-4 mb-[30px]'>
-								My next book!
+						<div
+							className={`${playfairDisplay.className} w-full flex flex-col justify-center mb-6 mt-4 text-grey-300`}>
+							<h1 className='text-5xl md:text-3xl text-center'>
+								Keep an eye out,
+							</h1>
+							<h1 className='text-5xl  md:text-3xl text-center mb-[30px] mx-4 md:mx-0 lg:mx-[4rem]'>
+								I'm currently working on my next book!
 							</h1>
 
 							<p className='text-center mb-6 px-6'></p>
