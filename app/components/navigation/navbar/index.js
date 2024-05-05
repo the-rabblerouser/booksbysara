@@ -25,7 +25,7 @@ const Navbar = () => {
 									spy={true}
 									smooth={true}
 									duration={500}
-									className='cursor-pointer border-b border-transparent hover:border-gray-300 transition-colors duration-300'>
+									className='cursor-pointer pb-3 border-b border-transparent hover:border-gray-400 transition-colors duration-300'>
 									Meet the Author
 								</ScrollLink>
 							</li>
@@ -35,7 +35,7 @@ const Navbar = () => {
 									spy={true}
 									smooth={true}
 									duration={500}
-									className='cursor-pointer border-b border-transparent hover:border-gray-300 transition-colors duration-300'>
+									className='cursor-pointer pb-3 border-b border-transparent hover:border-gray-400 transition-colors duration-300'>
 									Resources
 								</ScrollLink>
 							</li>
@@ -45,7 +45,7 @@ const Navbar = () => {
 									spy={true}
 									smooth={true}
 									duration={500}
-									className='cursor-pointer border-b border-transparent hover:border-gray-300 transition-colors duration-300'>
+									className='cursor-pointer pb-3 border-b border-transparent hover:border-gray-400 transition-colors duration-300'>
 									Contact
 								</ScrollLink>
 							</li>
