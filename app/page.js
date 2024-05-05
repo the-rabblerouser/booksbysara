@@ -30,16 +30,16 @@ export default function Home() {
 						</div>
 						<div className='w-full flex flex-col justify-center mb-6 mt-3 text-grey-300'>
 							<h1
-								className={`${playfairDisplay.className} text-[80px] text-center uppercase`}>
+								className={`${playfairDisplay.className} text-[60px] text-center uppercase`}>
 								Gina
 							</h1>
 							<h1
-								className={`${playfairDisplay.className} text-[20px] text-center mb-[30px] uppercase`}>
+								className={`${playfairDisplay.className} text-[19px] text-center mb-[30px] uppercase`}>
 								goes to the Genetic Counselor
 							</h1>
 
 							<p
-								className={`${montserrat.className} text-center mb-6 mx-3 md:mx-0 lg:mx-9`}>
+								className={`${montserrat.className} text-center mb-6 mx-3 md:mx-0 lg:mx-0 xlg:mx-9`}>
 								Being adopted is awesome! But sometimes being adopted makes
 								things complicated, especially when it comes to understanding
 								genetics. For those who don’t know their genetic background,
