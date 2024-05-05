@@ -1,12 +1,14 @@
 import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
+import { playfairDisplay } from '../../../fonts';
 
 const Navbar = () => {
 	return (
 		<>
 			<div className='w-full h-30 md:h-20 top-0 sticky bg-white'>
 				<div className='container mx-auto px-4 h-full'>
-					<div className='flex flex-col md:flex-row justify-between items-center h-full'>
+					<div
+						className={`${playfairDisplay.className} flex flex-col md:flex-row justify-between items-center h-full`}>
 						<ScrollLink
 							to='home_scroll'
 							spy={true}
@@ -23,7 +25,7 @@ const Navbar = () => {
 									spy={true}
 									smooth={true}
 									duration={500}
-									className='cursor-pointer'>
+									className='cursor-pointer border-b border-transparent hover:border-gray-300 transition-colors duration-300'>
 									Meet the Author
 								</ScrollLink>
 							</li>
@@ -33,7 +35,7 @@ const Navbar = () => {
 									spy={true}
 									smooth={true}
 									duration={500}
-									className='cursor-pointer'>
+									className='cursor-pointer border-b border-transparent hover:border-gray-300 transition-colors duration-300'>
 									Resources
 								</ScrollLink>
 							</li>
@@ -43,7 +45,7 @@ const Navbar = () => {
 									spy={true}
 									smooth={true}
 									duration={500}
-									className='cursor-pointer'>
+									className='cursor-pointer border-b border-transparent hover:border-gray-300 transition-colors duration-300'>
 									Contact
 								</ScrollLink>
 							</li>

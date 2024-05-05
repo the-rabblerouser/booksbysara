@@ -18,7 +18,7 @@
 
 body {
 	/* color: rgb(var(--foreground-rgb)); */
-	background-color: #fffcfc;
+	background-color: #ffffff;
 	background-image: url('/clean-gray-paper.png');
 	overflow-x: hidden;
 }
