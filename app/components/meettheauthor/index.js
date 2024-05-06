@@ -3,7 +3,14 @@
 import React from 'react';
 import Image from 'next/image';
 import authorPic from '/public/IMG_3225.jpeg';
-import { playfairDisplay, montserrat } from '../../fonts';
+import { playfairDisplay } from '../../fonts';
+import { Montserrat } from 'next/font/google';
+
+const desc_font = Montserrat({
+	subsets: ['latin'],
+	weight: '200',
+	display: 'swap',
+});
 
 const MeetTheAuthor = () => {
 	return (
@@ -17,7 +24,7 @@ const MeetTheAuthor = () => {
 								Meet the Author
 							</div>
 							<p
-								className={`${montserrat.className} text-sara_black text-center md:text-sm mb-3 lg:mb-6 px-[0.5rem] lg:px-[4.9rem] xlg:mx-[5.0rem] tracking-widest`}>
+								className={`${desc_font.className} text-sara_black text-center md:text-sm mb-3 lg:mb-6 px-[0.5rem] lg:px-[4.9rem] xlg:mx-[5.0rem] tracking-widest`}>
 								Sara Smith is a self-published author and genetic counseling
 								student at the Medical University of South Carolina. She was
 								abandoned at birth and adopted by her parents at fifteen months
@@ -27,7 +34,7 @@ const MeetTheAuthor = () => {
 								University of Nebraska at Omaha (Go Mavs!).
 							</p>
 							<p
-								className={`${montserrat.className} text-sara_black text-center md:text-sm mb-3 lg:mb-6 px-[0.5rem] lg:px-[4.9rem] xlg:mx-[5.0rem] tracking-widest`}>
+								className={`${desc_font.className} text-sara_black text-center md:text-sm mb-3 lg:mb-6 px-[0.5rem] lg:px-[4.9rem] xlg:mx-[5.0rem] tracking-widest`}>
 								Along her path to becoming a genetic counselor, Sara has worked
 								as a server & bartender, direct support professional, event
 								assistant, and laboratory technician. Driven by her personal
@@ -37,7 +44,7 @@ const MeetTheAuthor = () => {
 								cats.
 							</p>
 							<p
-								className={`${montserrat.className} text-sara_black text-center md:text-sm lg:mb-6 px-[0.5rem] lg:px-[4.9rem] xlg:mx-[5.0rem] tracking-widest`}>
+								className={`${desc_font.className} text-sara_black text-center md:text-sm lg:mb-6 px-[0.5rem] lg:px-[4.9rem] xlg:mx-[5.0rem] tracking-widest`}>
 								During her free time she enjoys traveling, practicing Brazilian
 								jiu jitsu, and playing with her cats.
 							</p>

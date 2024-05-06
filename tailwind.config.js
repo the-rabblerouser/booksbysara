@@ -13,7 +13,7 @@ module.exports = {
 					'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
 			},
 			colors: {
-				sara_gold: '#ffe6a7',
+				sara_gold: '#fe6d73',
 				sara_seaGreen: '#00b4d8',
 				sara_black: '#02020A',
 				sara_gray: '#dee2e6',

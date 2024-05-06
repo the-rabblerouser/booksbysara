@@ -8,6 +8,6 @@ export const playfairDisplay = Playfair_Display({
 
 export const montserrat = Montserrat({
 	subsets: ['latin'],
-	weight: '100',
+	weight: ['100', '200'],
 	display: 'swap',
 });
