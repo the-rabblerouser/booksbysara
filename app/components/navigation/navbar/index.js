@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
-import { playfairDisplay, montserrat, covered } from '../../../fonts';
+import { playfairDisplay, covered } from '../../../fonts';
 
 const Navbar = () => {
 	return (
