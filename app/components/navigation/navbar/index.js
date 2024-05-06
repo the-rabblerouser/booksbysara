@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
-import { playfairDisplay, montserrat } from '../../../fonts';
+import { playfairDisplay, montserrat, covered } from '../../../fonts';
 
 const Navbar = () => {
 	return (
@@ -13,12 +13,12 @@ const Navbar = () => {
 							spy={true}
 							smooth={true}
 							duration={500}
-							className={`${montserrat.className} text-3xl mt-4 mb-4 md:mt-0 md:mb-0 cursor-pointer`}>
+							className={`${covered.className} text-5xl mt-4 md:pt-[1rem] mb-4 md:mt-4 md:mb-0 cursor-pointer`}>
 							Books By <span className='text-sara_gold '>Sara</span>
 						</ScrollLink>
 
 						<ul
-							className={`${playfairDisplay.className} flex flex-row gap-x-6 mb-4 md:mb-0`}>
+							className={`${playfairDisplay.className} flex flex-row gap-x-6 mt-2 md:mt-4 mb-4 md:mb-0`}>
 							<li>
 								<ScrollLink
 									to='meet_the_author_scroll'

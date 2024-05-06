@@ -1,6 +1,6 @@
-import { Playfair_Display, Montserrat } from 'next/font/google';
+import { Playfair_Display, Montserrat, Give_You_Glory } from 'next/font/google';
 
-export const playfairDisplay = Playfair_Display({
+export const playfairDisplay = Montserrat({
 	subsets: ['latin'],
 	weight: '400',
 	display: 'swap',
@@ -9,5 +9,11 @@ export const playfairDisplay = Playfair_Display({
 export const montserrat = Montserrat({
 	subsets: ['latin'],
 	weight: ['100', '200'],
+	display: 'swap',
+});
+
+export const covered = Give_You_Glory({
+	subsets: ['latin'],
+	weight: '400',
 	display: 'swap',
 });

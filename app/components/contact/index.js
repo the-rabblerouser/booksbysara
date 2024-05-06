@@ -27,7 +27,7 @@ const Contact = () => {
 				<div className='flex flex-col lg:flex-row justify-evenly w-full mx-auto overflow-hidden shadow-md p-6 mt-[50px] bg-sara_gold'>
 					<div className=''>
 						<h1
-							className={`${playfairDisplay.className} text-2xl md:text-4xl uppercase text-center mb-5 lg:mb-10`}>
+							className={`${playfairDisplay.className} text-2xl md:text-4xl uppercase text-center mb-5 lg:mb-6`}>
 							Reach out to Sara
 						</h1>
 						<p
