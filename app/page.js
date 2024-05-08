@@ -57,7 +57,7 @@ export default function Home() {
 									onHoverEnd={(e) => {}}
 									onClick={() => router.push('/')}
 									className={`${montserrat.className} border border-gray-300 bg-sara_gray font-semibold py-2 px-4 inline-flex`}>
-									Purchase
+									Buy Now
 								</motion.button>
 							</Link>
 						</div>

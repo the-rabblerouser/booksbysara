@@ -27,25 +27,37 @@ const Contact = () => {
 				<div className='flex flex-col lg:flex-row justify-evenly w-full mx-auto overflow-hidden shadow-md p-6 mt-[50px] bg-sara_gold'>
 					<div className=''>
 						<h1
-							className={`${playfairDisplay.className} text-2xl md:text-4xl uppercase text-center mb-5 lg:mb-6`}>
-							Reach out to Sara
+							className={`${playfairDisplay.className} text-2xl md:text-4xl text-center mb-5 lg:mb-3`}>
+							Contact Author
 						</h1>
 						<p
-							className={`${montserrat.className} text-sm md:text-md text-center mb-7 lg:mb-0 md:mx-40 lg:mx-20`}>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-							dignissimos minima facilis laudantium nam ipsa alias numquam
-							voluptatibus debitis veritatis?
+							className={`${montserrat.className} text-sm md:text-md text-left mb-7 lg:mb-0 lg:mx-20`}>
+							Want to share your thoughts or insights? I’d love to hear from
+							you! Drop me a line using the contact form, and I’ll do my best to
+							get back to you as soon as possible. Your messages truly mean the
+							world to me, and I greatly appreciate every single one.
 						</p>
 						<p
-							className={`${montserrat.className} text-sm md:text-md text-center mt-5 mb-7 lg:mb-0 md:mx-40 lg:mx-20`}>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
-							dignissimos minima facilis laudantium nam ipsa alias numquam
-							voluptatibus debitis veritatis?
+							className={`${montserrat.className} text-sm md:text-md text-left mt-3 mb-5 lg:mb-0 lg:mx-20`}>
+							For teacher/educator discounts & signed copies, please use the
+							contact form.
+						</p>
+						<p
+							className={`${montserrat.className} text-sm md:text-md text-left mt-3 mb-5 lg:mb-0 lg:mx-20`}>
+							Let’s connect and chat. Looking forward to hearing from you!
+						</p>
+						<p
+							className={`${montserrat.className} text-sm md:text-md text-left mt-5 lg:mb-0 lg:mx-20`}>
+							Stay gene-tastic,
+						</p>
+						<p
+							className={`${montserrat.className} text-sm md:text-md text-left mb-7 lg:mb-0 lg:mx-20`}>
+							Sara
 						</p>
 					</div>
 					<div className={`${montserrat.className} w-full`}>
 						<form onSubmit={handleSubmit(onSubmit)}>
-							<div className='mb-4'>
+							<div className='mb-4 '>
 								<input
 									type='text'
 									id='name'
@@ -89,7 +101,7 @@ const Contact = () => {
 									type='submit'
 									formMethod='POST'
 									onClick={() => router.push('/')}
-									className={`${montserrat.className} border border-gray-300 bg-white font-semibold py-2 px-4 inline-flex`}>
+									className={`${montserrat.className} bg-white font-semibold py-2 px-4 inline-flex`}>
 									Submit
 								</motion.button>
 							</div>
