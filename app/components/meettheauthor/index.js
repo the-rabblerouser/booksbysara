@@ -8,7 +8,7 @@ import { Montserrat } from 'next/font/google';
 
 const desc_font = Montserrat({
 	subsets: ['latin'],
-	weight: '500',
+	weight: '400',
 	display: 'swap',
 });
 
