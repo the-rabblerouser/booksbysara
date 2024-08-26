@@ -8,7 +8,7 @@ export const playfairDisplay = Montserrat({
 
 export const montserrat = Montserrat({
 	subsets: ['latin'],
-	weight: ['100', '200', '500'],
+	weight: ['100', '200', '400'],
 	display: 'swap',
 });
 
